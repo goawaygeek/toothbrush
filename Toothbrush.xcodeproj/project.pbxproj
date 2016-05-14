@@ -13,6 +13,8 @@
 		66F906B71CE7D79A003B3518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F906B51CE7D79A003B3518 /* Main.storyboard */; };
 		66F906B91CE7D79A003B3518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F906B81CE7D79A003B3518 /* Assets.xcassets */; };
 		66F906BC1CE7D79A003B3518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F906BA1CE7D79A003B3518 /* LaunchScreen.storyboard */; };
+		66F906C51CE7E103003B3518 /* Vibrator.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F906C41CE7E103003B3518 /* Vibrator.m */; };
+		66F906C71CE7E1B8003B3518 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F906C61CE7E1B8003B3518 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		66F906B81CE7D79A003B3518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66F906BB1CE7D79A003B3518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66F906BD1CE7D79A003B3518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66F906C31CE7E103003B3518 /* Vibrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vibrator.h; sourceTree = "<group>"; };
+		66F906C41CE7E103003B3518 /* Vibrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vibrator.m; sourceTree = "<group>"; };
+		66F906C61CE7E1B8003B3518 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66F906C71CE7E1B8003B3518 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,7 @@
 		66F906A01CE7D79A003B3518 = {
 			isa = PBXGroup;
 			children = (
+				66F906C61CE7E1B8003B3518 /* AudioToolbox.framework */,
 				66F906AB1CE7D79A003B3518 /* Toothbrush */,
 				66F906AA1CE7D79A003B3518 /* Products */,
 			);
@@ -67,6 +74,8 @@
 				66F906BA1CE7D79A003B3518 /* LaunchScreen.storyboard */,
 				66F906BD1CE7D79A003B3518 /* Info.plist */,
 				66F906AC1CE7D79A003B3518 /* Supporting Files */,
+				66F906C31CE7E103003B3518 /* Vibrator.h */,
+				66F906C41CE7E103003B3518 /* Vibrator.m */,
 			);
 			path = Toothbrush;
 			sourceTree = "<group>";
@@ -151,6 +160,7 @@
 			files = (
 				66F906B41CE7D79A003B3518 /* ViewController.m in Sources */,
 				66F906B11CE7D79A003B3518 /* AppDelegate.m in Sources */,
+				66F906C51CE7E103003B3518 /* Vibrator.m in Sources */,
 				66F906AE1CE7D79A003B3518 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +312,7 @@
 				66F906C21CE7D79A003B3518 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

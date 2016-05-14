@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import <AudioToolbox/AudioToolbox.h>
+#import "Vibrator.h"
 
 @interface ViewController ()
 
@@ -17,11 +19,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    Vibrator *vibe = [[Vibrator alloc] init];
+    [vibe startBrushing];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) vibrate: (NSTimer *)timer {
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 }
 
 @end
