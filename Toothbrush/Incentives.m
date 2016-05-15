@@ -34,7 +34,7 @@
 }
 
 - (void) goCoach:(NSTimer *)timer {
-    NSArray *stupidSpeech = @[@"Just ten more minutes!", @"Now brush your crowns", @"Think about your uncle's gross teeth", @"Trump 20 16", @"Visualize how beautiful your teeth will be"];
+    NSArray *stupidSpeech = @[@"Just ten more minutes!", @"Now brush your crowns", @"Think about your uncle's gross teeth", @"Trump 20 16", @"Visualize how beautiful your teeth will be",@"Your code just beautiful like your teeth", @"meeting a investor today", @"Presenting a pitch today", @"Using the best teethbrush technolodgy right now",@"Smile everyday make you and others happier"];
     
     NSUInteger randomIndex = arc4random() % [stupidSpeech count];
     
