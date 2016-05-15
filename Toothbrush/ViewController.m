@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import "Vibrator.h"
+#import "Incentives.h"
+
 
 @interface ViewController ()
 
@@ -22,6 +24,9 @@
     
     Vibrator *vibe = [[Vibrator alloc] init];
     [vibe startBrushing];
+    
+    Incentives *jerk = [[Incentives alloc] init];
+    [jerk startCoach];
 }
 
 
